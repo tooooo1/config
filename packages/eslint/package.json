@@ -7,17 +7,35 @@
     "name": "Chung-il Jung",
     "email": "jungchungil7@gmail.com"
   },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tooooo1/config.git",
     "directory": "packages/eslint"
   },
-  "main": "./dist/index.js",
+  "main": "./index.js",
+  "module": "dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "rules",
-    "index.js"
+    "dist"
   ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint ."
+  },
   "keywords": [
     "eslint-config"
   ],
@@ -27,9 +45,12 @@
   },
   "homepage": "https://github.com/tooooo1/config#readme",
   "devDependencies": {
-    "eslint": "^8.39.0",
-    "@typescript-eslint/parser": "^6.17.0",
+    "@types/eslint": "^8.56.2",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.39.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
