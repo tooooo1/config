@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "@tooooo1/eslint-config": "workspace:^",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}
