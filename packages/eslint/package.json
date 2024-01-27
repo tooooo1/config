@@ -1,0 +1,38 @@
+{
+  "name": "@tooooo1/eslint-config",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "ESLint and TypeScript configurations and tools",
+  "author": {
+    "name": "Chung-il Jung",
+    "email": "jungchungil7@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tooooo1/config.git",
+    "directory": "packages/eslint"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "rules",
+    "index.js"
+  ],
+  "keywords": [
+    "eslint-config"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tooooo1/config/issues"
+  },
+  "homepage": "https://github.com/tooooo1/config#readme",
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
